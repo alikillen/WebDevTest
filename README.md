@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# Web Developer Candidate Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I created this project to complete a series of web development/coding tasks as part of a recruitment process for a role as a junior web developer. My intention in creating a repository is to make it easier for the company to access and assess my work. I have removed any potentially confidential info/identifying information about the company before creating the repo. I have included the main list of questions below and instructions on how to run the app and where to find my code/answers.
 
-## Available Scripts
+<!-- include unit testing if possible/visualisation of code test file, pages for other challenges JS etc if poss, instructions on how to run, deploy to heroku -->
 
-In the project directory, you can run:
 
-### `yarn start`
+# Questions
+## 1. GIT Knowledge
+We use GIT heavily in everyday tasks and it’s integral for the maintenance of the business. Although most IDE’s will have GIT integrated, it’s good to know what the IDE is actually doing and how it works.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 1.1 Write GIT CLI commands for the following
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Change to your working directory (for demonstrative purposes, the working directory is “/Users/exampleuser/Desktop/sites/company2018“
+2. Check the status of the repo and current branch
+3. Perform a pull from origin master
+4. Create a new branch
+5. Checkout the branch you created
+6. Add all modified files and commit a change
+7. Push your branch to origin
+8. Good news! Your changes were reviewed and accepted in a pull request. Now you can delete your local branch, it’s now part of master. Write the git command to delete the branch you created.
 
-### `yarn test`
+### 1.2 Write a typical workflow for pushing new code into the master branch with Git.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## 2. Something is broken! What do we do?
+Part of a great workflow and team environment should be encouraging people to help each other when they need it.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Scenario
+Our sales period is approaching within the next week. Discount codes will go live in less than 5 days and all promotional ads/content will start to flow soon. But there’s a problem! For some reason the UK and US company website aren’t generating sales for the main product. That’s our flagship product!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Everyone is panicking and it’s up to us, the Web team, to investigate potential bugs/issues as to why this may be happening.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 3. JavaScript
+Download the following JS file and answer the questions within.
+(see other document for file link)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Please find my solutions within webdevtest/challenges/JSChallenges.js
+<!-- instructions to run -->
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 4. Development
 
-## Learn More
+### Instructions to Run My App/Solution to this Section:
+#### I have created a React app to complete this question. To run this app and see my solutions:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone this repository with git, eg run the command `git clone`
+2. Change into project directory, eg `cd webdevtest`
+3. Run `Yarn start` in a terminal to run app locally in browser
+   
+   <!-- or npm start -->
+   <!-- link to deployed app if possible -->
+<!-- yarn test to run tests -->
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Recreate this as best you can:
+(see other document for video link)
 
-### Code Splitting
+You can use frameworks like Vue or React (vue preferable but use whatever framework you feel most comfortable with). Minimize other javascript libraries.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Page hero:
+Create Page hero using a mobile first approach. Tips: try to only load the applicable elements to the applicable screen size.
 
-### Analyzing the Bundle Size
+(See other documents for links)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Font-family: ‘Helvetica Neue’
 
-### Making a Progressive Web App
+Mobile video: 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Desktop video:
 
-### Advanced Configuration
+Company logo:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### Optional Challenge:
+create a burger nav menu for mobile which has animations and states
 
-### Deployment
+### Greeting Card Text Generator:
+Create a greeting card text generator where the user fills in a form and it renders the html. Form inputs not filled will not appear. Use modern html and no inline styling for rendered greeting card. Mobile first but not as necessary as the first example.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+#### Optional Challenge: 
+render raw html of the rendered signature.
 
-### `yarn build` fails to minify
+## 5. Self Evaluation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Rate your confidence in the following from 1 to 10 (10 being very confident)
+1. HTML
+2. HTML emails
+3. CSS
+4. JavaScript (up to ES6)
+5. GIT
+6. Liquid
+7. VueJS Ecosystem
