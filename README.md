@@ -1,6 +1,6 @@
 # Web Developer Candidate Test
 
-I created this project to complete a series of web development/coding tasks as part of a recruitment process for a role as a junior web developer. My intention in creating a repository is to make it easier for the company to access and assess my work. I have removed any potentially confidential info/identifying information about the company before creating the repo. I have included the main list of questions below and instructions on how to run the app and where to find my code/answers.
+I created this project to complete a series of web development/coding tasks as part of a recruitment process for a role as a junior web developer. My intention in creating a repository is to make it easier for the company to access and assess my work. I have attempted to remove any potentially confidential info/identifying information about the company before creating the repo. I have included the main list of questions below and instructions on how to run the app and where to find my code/answers.
 
 <!-- include unit testing if possible/visualisation of code test file, pages for other challenges JS etc if poss, instructions on how to run, deploy to heroku -->
 
@@ -48,7 +48,9 @@ Please find my solutions within webdevtest/challenges/JSChallenges.js
 
 1. Clone this repository with git, eg run the command `git clone`
 2. Change into project directory, eg `cd webdevtest`
-3. Run `Yarn start` in a terminal to run app locally in browser
+3. Install any dependencies with the command `npm i`
+<!-- 4. should be minimal -->
+5. Run `Yarn start` in a terminal to run app locally in browser
    
    <!-- or npm start -->
    <!-- link to deployed app if possible -->
