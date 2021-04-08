@@ -22,7 +22,7 @@ We use GIT heavily in everyday tasks and it’s integral for the maintenance of 
 
 ### 1.2 Write a typical workflow for pushing new code into the master branch with Git.
 
-
+<!-- include commands for how to create and commit/push pull merge branch etc -->
 ## 2. Something is broken! What do we do?
 Part of a great workflow and team environment should be encouraging people to help each other when they need it.
 

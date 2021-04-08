@@ -1,3 +1,11 @@
+/* .body {
+  font-family: Helvetica;
+} */
+
+/* :root {
+  font-family: Helvetica;
+} */
+
 .App {
   text-align: center;
 }
@@ -36,3 +44,13 @@
     transform: rotate(360deg);
   }
 }
+
+/* For mobile phones: */
+/* .hero-video {
+  src: ("./media/Homepage_Brand_Video_Mobile_Compressed.mp4");
+} */
+
+/* @media only screen and (min-width: 768px) { */
+  /* For desktop: */
+  /* .hero-video {src: ("./media/Homepage_Brand_Video_Desktop_Compressed.mp4")};
+} */
