@@ -98,7 +98,7 @@ class TextGenerator extends React.Component {
 
         <GreetingCard
           data={this.state}
-          text={this.state.checked === true ? "checked" : "unchecked"}
+          text={this.state.checked === true ? "checked!" : "unchecked"}
         />
       </>
     );

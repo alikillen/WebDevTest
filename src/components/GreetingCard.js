@@ -29,20 +29,25 @@ export default function GreetingCard({ data, text }) {
     // console.log(checked.text)
     // console.log(text)
     return (
-      <div className="greeting-card">
+      <>
         <h1>Greeting Card</h1>
-        <h2>Hismile</h2>
-        <h2>{greeting}</h2>
-        <br></br>
-        <h2>{fname}</h2>
-        <br></br>
-        <h2>{hobby && "Hobby: " + hobby}</h2>
-        <br></br>
-        {/* <h2>{checked + "Checked: " + text}</h2> */}
-        <h2>{checked === true ? "Checked: " + text : "" }</h2>
-        {/* dont need text variable if doing it this way */}
-        <small>a: 225-229 Burleigh Connection Road Burleigh Waters QLD 4220 </small>
-      </div>
+        <div className='greeting-card'>
+          <p>{greeting}</p>
+          <h2>Hismile</h2>
+
+          <br></br>
+          <p>{fname}</p>
+          <br></br>
+          <p>{hobby && "Hobby: " + hobby}</p>
+          <br></br>
+          {/* <h2>{checked + "Checked: " + text}</h2> */}
+          <p>{checked === true ? "Checked?: " + text : ""}</p>
+          {/* dont need text variable if doing it this way */}
+          <small>
+            a: 225-229 Burleigh Connection Road Burleigh Waters QLD 4220{" "}
+          </small>
+        </div>
+      </>
     );
   // }
 }
