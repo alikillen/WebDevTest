@@ -1,0 +1,115 @@
+.Navbar {
+  background-color: rgb(82, 248, 234);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.Navbar .leftSide {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Navbar .leftSide .links {
+  max-height: 80px;
+}
+
+.Navbar .leftSide .links:hover {
+  background-color:bisque;
+}
+
+.Navbar .leftSide .links a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  margin-left: 15px;
+}
+
+.Navbar .leftSide button {
+  display: none;
+  margin-left: 20px;
+}
+
+.Navbar .leftSide #hidden {
+  display: flex;
+}
+
+.Navbar .rightSide {
+
+}
+
+@media only screen and (max-width: 880px) {
+  .Navbar .leftSide .links a {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .Navbar .leftSide .links a {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .Navbar .leftSide button {
+    display: flex;
+  }
+
+  .Navbar .leftSide .links {
+    display: none;
+  }
+
+  .Navbar .leftSide #hidden {
+    position: absolute;
+    left: 0px;
+    top: 80px;
+    height: 230px;
+    max-height: 230px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Navbar .leftSide #hidden a {
+    margin: 10px;
+    font-size: 25px;
+  }
+}
+
+/* burgerbutton styling */
+
+.burger-button-container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}

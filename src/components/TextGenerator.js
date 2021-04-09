@@ -53,6 +53,7 @@ class TextGenerator extends React.Component {
             <input
               type='text'
               name='name'
+              placeholder="First name"
               value={this.state.name}
               onChange={this.handleChange}
             />
@@ -65,6 +66,7 @@ class TextGenerator extends React.Component {
             <input
               type='text'
               name='hobby'
+              placeholder="Hobby"
               value={this.state.hobby}
               onChange={this.handleChange}
             />
@@ -76,6 +78,7 @@ class TextGenerator extends React.Component {
             <input
               type='text'
               name='greeting'
+              placeholder="Hi there!"
               value={this.state.greeting}
               onChange={this.handleChange}
             />
