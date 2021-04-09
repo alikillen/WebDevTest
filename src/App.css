@@ -45,6 +45,10 @@
   }
 }
 
+.hero-video {
+  width: 100%;
+}
+
 /* For mobile phones: */
 /* .hero-video {
   src: ("./media/Homepage_Brand_Video_Mobile_Compressed.mp4");
