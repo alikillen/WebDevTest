@@ -47,14 +47,67 @@
 
 .hero-video {
   width: 100%;
+  z-index: -1;
+  display: flex;
 }
 
+.hero-container {
+  width: 100%;
+  border: 5px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  flex-direction: column;
+  
+  text-align: center;
+}
+
+
+/* .hero-btns {
+  margin-top: 32px;
+}
+
+.hero-btns .btn {
+  margin: 6px;
+} */
+
+.hero-text {
+  border: 3px solid yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  flex-direction: column;
+  position: absolute;
+}
+
+.hero-intro {
+  /* display: flex; */
+  /* margin-top: -70%; */
+}
+
+.hero-title {
+}
+
+.hero-tagline {
+}
+
+.hero-shop-button {
+}
+
+.hero-video-button {
+}
+
+.greeting-card {
+  background-color: #faf8fa;
+}
 /* For mobile phones: */
 /* .hero-video {
   src: ("./media/Homepage_Brand_Video_Mobile_Compressed.mp4");
 } */
 
 /* @media only screen and (min-width: 768px) { */
-  /* For desktop: */
-  /* .hero-video {src: ("./media/Homepage_Brand_Video_Desktop_Compressed.mp4")};
+/* For desktop: */
+/* .hero-video {src: ("./media/Homepage_Brand_Video_Desktop_Compressed.mp4")};
 } */
