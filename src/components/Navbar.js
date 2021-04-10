@@ -11,6 +11,8 @@ function Navbar() {
 
 
   const [showLinks, setShowLinks] = useState(false);
+
+
   return (
     <div className='Navbar'>
       <div className='leftSide'>
@@ -24,16 +26,17 @@ function Navbar() {
           </a>
           <a href='https://hismileteeth.com/cart'>My Cart</a>
         </div>
-        <button onClick={()=> setShowLinks(!showLinks)}>
-        {/* Open */}
 
-        {/* {" "} */}
-        <BurgerButton />
+
+        <button onClick={() => setShowLinks(!showLinks)}>
+          {/* Open */}
+          <BurgerButton />
+          {/* className="burger-button-component" id={showLinks ? ".change" : ""} */}
         </button>
       </div>
 
       {/* <div className="rightSide"> */}
-        {/* button here when mobile */}
+      {/* button here when mobile */}
       {/* </div> */}
     </div>
   );
