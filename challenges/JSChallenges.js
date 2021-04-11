@@ -1,14 +1,13 @@
 // 3. JavaScript
 // Download the following JS file and answer the questions within.
 
-
 /*
     Q. 1
     Without using Array.prototype.concat(), merge these 2 arrays in 1 line of code
 */
-const arr1 = [ "this", "is", "an", "array" ]
-const arr2 = [ 1, 2, 3, 4 ]
-let merged = /* your code */
+const arr1 = ["this", "is", "an", "array"];
+const arr2 = [1, 2, 3, 4];
+// let merged = /* your code */
 
 /* 
     Q. 2
@@ -17,41 +16,64 @@ let merged = /* your code */
     API endpoint: https://icanhazdadjoke.com/
 */
 
+function fetchDadJoke() {
+  fetch("https://icanhazdadjoke.com/", {
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => console.log(data));
+}
+
+// console.log(fetchDadJoke())
+
+// function getDetails(url) {
+//   return fetch(url).then((response) => response.json());
+// }
+
+// var u = "https://get.geojs.io/v1/ip/country.json";
+// getDetails(u).then(function (data) {
+//   console.log(data);
+// });
+
 /*
     Q. 3
     Given the following data structure, return an array of objects that have a colour "red".
 */
 const structure = [
-    {
-        id: 1,
-        color: "red",
-        name: "Apple"
-    },
-    {
-        id: 2,
-        color: "pink",
-        name: "Flower"
-    },
-    {
-        id: 3,
-        color: "red",
-        name: "Tomato"
-    },
-    {
-        id: 4,
-        color: "green",
-        name: "Apple"
-    },
-    {
-        id: 5,
-        color: "black",
-        name: "Hat"
-    },
-    {
-        id: 6,
-        color: "yellow",
-        name: "Tree"
-    }
-]
+  {
+    id: 1,
+    color: "red",
+    name: "Apple",
+  },
+  {
+    id: 2,
+    color: "pink",
+    name: "Flower",
+  },
+  {
+    id: 3,
+    color: "red",
+    name: "Tomato",
+  },
+  {
+    id: 4,
+    color: "green",
+    name: "Apple",
+  },
+  {
+    id: 5,
+    color: "black",
+    name: "Hat",
+  },
+  {
+    id: 6,
+    color: "yellow",
+    name: "Tree",
+  },
+];
 
-let reds = /* your code */
+let reds = structure.filter((obj) => obj.color === "red");
+console.log(reds);

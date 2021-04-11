@@ -13,6 +13,7 @@ function Home() {
     {/* <Navbar /> */}
     <HeroSection />
     <TextGenerator />
+    <JSChallenges />
     {/* <GreetingCard /> */}
     {/* <RawHTML /> */}
       
