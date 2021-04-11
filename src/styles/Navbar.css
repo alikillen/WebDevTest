@@ -58,11 +58,11 @@
   margin-left: 20px;
 }
 
-.Navbar .leftSide #hidden {
+.Navbar .leftSide #buttonlinks {
   display: flex;
 }
 
-.Navbar .rightSide #hidden {
+.Navbar .rightSide #buttonlinks {
   display: flex;
 }
 
@@ -89,19 +89,31 @@
   margin-left: 15px;
 }
 
+.hide-shop-kit-link {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hide-explore-range-link {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
 @media only screen and (max-width: 880px) {
   .Navbar .leftSide .links a {
     font-size: 20px;
   }
-  .Navbar .leftSide .links .explore-range-link {
+  /* .Navbar .leftSide .links .explore-range-link {
     border: 5px solid purple;
   }
 
   .Navbar .leftSide .links .shop-kit-link {
     border: 5px solid purple;
-  }
+  } */
 
-    .Navbar .leftSide button {
+  .Navbar .leftSide button {
     display: flex;
     margin-right: 80%;
     border-color: transparent;
@@ -130,26 +142,24 @@
     background-color: blue; */
   }
 
-  .Navbar .leftSide .links .explore-range-link {
+  /* .Navbar .leftSide .links .explore-range-link {
     border: 5px solid green;
   }
 
   .Navbar .leftSide .links .shop-kit-link {
     border: 5px solid green;
-  }
+  } */
 
-    .Navbar .leftSide button {
+  .Navbar .leftSide button {
     display: flex;
     margin-right: 80%;
     border-color: transparent;
     background-color: transparent;
   }
-/* 
+  /* 
   .Navbar .leftSide .links .home-link {
     display: none;
   } */
-
-  
 }
 
 @media only screen and (max-width: 880px) {
@@ -168,9 +178,7 @@
     display: none;
   } */
 
-
-
-  .Navbar .leftSide #hidden {
+  .Navbar .leftSide #buttonlinks {
     position: absolute;
     left: 0px;
     top: 80px;
@@ -183,12 +191,12 @@
     align-items: center;
   }
 
-  .Navbar .leftSide #hidden a {
+  .Navbar .leftSide #buttonlinks a {
     margin: 10px;
     font-size: 25px;
   }
 
-  .Navbar .rightSide #hidden {
+  .Navbar .rightSide #buttonlinks {
     position: absolute;
     left: 0px;
     top: 80px;
@@ -201,7 +209,7 @@
     align-items: center;
   }
 
-  .Navbar .rightSide #hidden a {
+  .Navbar .rightSide #buttonlinks a {
     margin: 10px;
     font-size: 25px;
   }
@@ -209,7 +217,7 @@
 
 @media only screen and (min-width: 880px) {
   .Navbar .leftSide .links-desktop a {
-    font-size: 20px;
+    /* font-size: 20px; */
     /* text-decoration: none;
     color: white;
     font-size: 25px;
@@ -217,14 +225,14 @@
     max-height: 80px; */
   }
 
-  .Navbar .leftSide .links-desktop {
+  /* .Navbar .leftSide .links-desktop {
     font-size: 20px;
     text-decoration: none;
     color: white;
     font-size: 25px;
     margin-left: 15px;
     max-height: 80px;
-  }
+  } */
 
   .Navbar .leftSide .links .explore-range-link {
     border: 5px solid yellow;
@@ -238,8 +246,6 @@
     display: none;
   } */
 }
-
-
 
 /* burgerbutton styling */
 

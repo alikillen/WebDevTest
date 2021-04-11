@@ -14,8 +14,9 @@ function Navbar() {
     <div className='Navbar'>
       <div className='leftSide'>
         <div
-          className={isPageDesktop ? "links-desktop" : "links"}
-          id={showLinks ? "hidden" : ""}
+          // className={isPageDesktop ? "links-desktop" : "links"}
+          className='links'
+          id={showLinks ? "buttonlinks" : ""}
         >
           {/* {isPageMobile && (
             <a className='home-link' href='/'>
@@ -23,13 +24,21 @@ function Navbar() {
             </a>
           )} */}
           <a
-            className='shop-kit-link'
+            className={
+              isPageMobile && !showLinks
+                ? "hide-shop-kit-link"
+                : "shop-kit-link"
+            }
             href='https://hismileteeth.com/products/teeth-whitening-kit'
           >
             Shop the Kit
           </a>
           <a
-            className='explore-range-link'
+            className={
+              isPageMobile && !showLinks
+                ? "hide-explore-range-link"
+                : "explore-range-link"
+            }
             href='https://hismileteeth.com/pages/products'
           >
             Explore the Range
@@ -39,14 +48,12 @@ function Navbar() {
           </a> */}
         </div>
 
-        
-          <button
-            onClick={() => setShowLinks(!showLinks)}
-            className='burger-button'
-          >
-            <BurgerButton />
-          </button>
-    
+        <button
+          onClick={() => setShowLinks(!showLinks)}
+          className='burger-button'
+        >
+          <BurgerButton />
+        </button>
       </div>
 
       <h1 className={isPageDesktop ? "nav-title-desktop" : "nav-title-mobile"}>
