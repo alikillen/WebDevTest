@@ -1,3 +1,5 @@
+// Web Dev Recruitment test
+
 // 3. JavaScript
 // Download the following JS file and answer the questions within.
 
@@ -7,8 +9,11 @@
 */
 const arr1 = ["this", "is", "an", "array"];
 const arr2 = [1, 2, 3, 4];
-// let merged = /* your code */
+let merged = [...arr1, ...arr2]
+console.log("solution to Q1 - using spread operator: " + merged)
 
+// alternative solution to Q1
+console.log("alternative solution to Q1 using Array.of(): " + Array.of(arr1, arr2))
 /* 
     Q. 2
     Using the browser Fetch API, fetch a random Dad Joke from the following endpoint and log it to the console
@@ -20,23 +25,13 @@ function fetchDadJoke() {
   fetch("https://icanhazdadjoke.com/", {
     headers: {
       Accept: "application/json",
-      "Content-Type": "application/json",
     },
   })
     .then((response) => response.json())
-    .then((data) => console.log(data));
+    .then((data) => console.log("Your dad joke is: " + data.joke));
 }
 
-// console.log(fetchDadJoke())
-
-// function getDetails(url) {
-//   return fetch(url).then((response) => response.json());
-// }
-
-// var u = "https://get.geojs.io/v1/ip/country.json";
-// getDetails(u).then(function (data) {
-//   console.log(data);
-// });
+fetchDadJoke()
 
 /*
     Q. 3
