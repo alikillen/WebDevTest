@@ -1,7 +1,9 @@
-// Web Dev Recruitment test
+// Web Dev Recruitment test - Alison Killen
 
 // 3. JavaScript
 // Download the following JS file and answer the questions within.
+
+// run the solutions here by running "node JSChallenges" while in the challenges folder.
 
 /*
     Q. 1
@@ -9,11 +11,13 @@
 */
 const arr1 = ["this", "is", "an", "array"];
 const arr2 = [1, 2, 3, 4];
-let merged = [...arr1, ...arr2]
-console.log("solution to Q1 - using spread operator: " + merged)
+let merged = [...arr1, ...arr2];
+console.log("solution to Q1 - using spread operator: " + merged);
 
 // alternative solution to Q1
-console.log("alternative solution to Q1 using Array.of(): " + Array.of(arr1, arr2))
+console.log(
+  "alternative solution to Q1 using Array.of(): " + Array.of(arr1, arr2)
+);
 /* 
     Q. 2
     Using the browser Fetch API, fetch a random Dad Joke from the following endpoint and log it to the console
@@ -21,17 +25,7 @@ console.log("alternative solution to Q1 using Array.of(): " + Array.of(arr1, arr
     API endpoint: https://icanhazdadjoke.com/
 */
 
-function fetchDadJoke() {
-  fetch("https://icanhazdadjoke.com/", {
-    headers: {
-      Accept: "application/json",
-    },
-  })
-    .then((response) => response.json())
-    .then((data) => console.log("Your dad joke is: " + data.joke));
-}
-
-fetchDadJoke()
+// please see answer to question 2 in components/DadJokeGen - will be a page in the react app/netlify site
 
 /*
     Q. 3
