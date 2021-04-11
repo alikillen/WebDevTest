@@ -1,9 +1,10 @@
 import "../App.css";
+import "../styles/Navbar.css";
 import React from "react";
 import Questions from "../components/Questions";
 
-function Questions() {
+function QuestionsPage() {
   return <Questions />;
 }
 
-export default Questions;
+export default QuestionsPage;

@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/JSChallenges.css";
 import "../App.css";
 
 /* 
@@ -11,7 +10,7 @@ import "../App.css";
 
 function DadJokeGen() {
   function fetchDadJoke() {
-    const joke = document.getElementById("dad-joke");
+    // const joke = document.getElementById("dad-joke");
 
     fetch("https://icanhazdadjoke.com/", {
       headers: {
@@ -21,7 +20,6 @@ function DadJokeGen() {
       .then((response) => response.json())
       .then((data) => {
         console.log("Your dad joke is: " + data.joke);
-        joke.innerHTML = `${data.joke}`;
       });
   }
 
@@ -30,9 +28,9 @@ function DadJokeGen() {
       <div className='DadJokeGen'>
         <h1>JS Challenge Q2 - Random Dad Joke Generator</h1>
         <p>
-          My solutions to the other JS challenges are within the /challenges folder of this repo - there is
-          a file with the solutions called JSChallenges.js. They can be run in
-          an IDE to test them.
+          My solutions to the other JS challenges are within the /challenges
+          folder of this repo - there is a file with the solutions called
+          JSChallenges.js. They can be run in an IDE to test them.
         </p>
         <p>
           Jokes from the
@@ -40,11 +38,11 @@ function DadJokeGen() {
         </p>
 
         <button className='joke-btn' onclick={fetchDadJoke()}>
-          Fetch me a joke
+          Fetch me a joke to console
         </button>
 
-        <h2>Your Dad joke is...</h2>
-        <p className='dad-joke' id='dad-joke'></p>
+        {/* <h2>Your Dad joke is...</h2>
+        <p className='dad-joke' id='dad-joke'>{`${fetchDadJoke}`}</p> */}
       </div>
     </>
   );

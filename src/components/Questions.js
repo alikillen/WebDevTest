@@ -1,6 +1,5 @@
 import React from "react";
 import "../App.css";
-import "../styles/Questions.css";
 
 function Questions() {
   return (
@@ -18,9 +17,9 @@ function Questions() {
         You can also see the zip folder of the react app attached to email - Q3
         JS challenges are in /challenges folder if you want to view the code, I
         have also pasted the code in the google doc. The readme of the app also
-        contains my answers to all questions, it may be easier to read than this page. I can provide access to my github
-        repo for this material as well. Please let me know if there are any
-        issues/questions! Thanks.
+        contains my answers to all questions, it may be easier to read than this
+        page. I can provide access to my github repo for this material as well.
+        Please let me know if there are any issues/questions! Thanks.
       </p>
       <div className='questions-main'>
         <h2>1. GIT Knowledge </h2>

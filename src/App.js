@@ -4,8 +4,8 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home.js";
 
 import "./App.css";
-import DadJokeGen from "./components/DadJokeGen";
-import Questions from "./components/Questions";
+import DadJokeGenPage from "./pages/DadJokeGenPage.js";
+import QuestionsPage from "./pages/Questions.js";
 
 function App() {
   return (
@@ -14,9 +14,9 @@ function App() {
         <Navbar />
         <Switch>
           <Route path='/' exact component={Home} />
+          <Route path='/Questions' exact component={QuestionsPage} />
+          <Route path='/DadJokeGenPage' exact component={DadJokeGenPage} />
         </Switch>
-        <Route path='/Questions' exact component={Questions} />
-        <Route path='/DadJokeGen' exact component={DadJokeGen} />
       </Router>
     </>
   );
