@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import BurgerButton from "../components/BurgerButton";
 import { useMediaQuery } from "../helpers/MediaQueries";
 import "../App.css";
@@ -12,10 +13,29 @@ function Navbar() {
 
   return (
     <div className='Navbar'>
+      {isPageMobile ? (
+        <button
+          onClick={() => setShowLinks(!showLinks)}
+          className='burger-button'
+        >
+          <BurgerButton />
+        </button>
+      ) : (
+        ""
+      )}
+
+      <Link
+        to='/'
+        className={isPageDesktop ? "nav-title-desktop" : "nav-title-mobile"}
+        // className="links"
+      >
+        <h1>Hismile</h1>
+      </Link>
+
       <div className='leftSide'>
         <div
-          // className={isPageDesktop ? "links-desktop" : "links"}
-          className='links'
+          className={isPageDesktop ? "links-desktop" : "links"}
+          // className='links'
           id={showLinks ? "buttonlinks" : ""}
         >
           {/* {isPageMobile && (
@@ -25,9 +45,7 @@ function Navbar() {
           )} */}
           <a
             className={
-              isPageMobile && !showLinks
-                ? "hide-shop-kit-link"
-                : "shop-kit-link"
+              isPageMobile && !showLinks ? "hide-shop-kit-link" : "links"
             }
             href='https://hismileteeth.com/products/teeth-whitening-kit'
           >
@@ -35,9 +53,7 @@ function Navbar() {
           </a>
           <a
             className={
-              isPageMobile && !showLinks
-                ? "hide-explore-range-link"
-                : "explore-range-link"
+              isPageMobile && !showLinks ? "hide-explore-range-link" : "links"
             }
             href='https://hismileteeth.com/pages/products'
           >
@@ -47,18 +63,7 @@ function Navbar() {
             My Cart
           </a> */}
         </div>
-
-        <button
-          onClick={() => setShowLinks(!showLinks)}
-          className='burger-button'
-        >
-          <BurgerButton />
-        </button>
       </div>
-
-      <h1 className={isPageDesktop ? "nav-title-desktop" : "nav-title-mobile"}>
-        Hismile
-      </h1>
 
       <div className='rightSide'>
         <div className='links'>
