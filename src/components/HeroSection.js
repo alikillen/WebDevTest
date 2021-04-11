@@ -10,8 +10,6 @@ function HeroSection() {
   let isPageMobile = useMediaQuery("(max-width: 800px)");
   return (
     <div className='hero-container'>
-      {/* video needs to be CONDITIONALLY RENDERED DEPENDING ON MOBILE/DESKTOP */}
-
       {isPageDesktop && (
         <video className='hero-video' src={DesktopVideo} autoPlay loop muted />
       )}
