@@ -17,19 +17,21 @@ function HeroSection() {
         <video className='hero-video' src={MobileVideo} autoPlay loop muted />
       )}
       <div className='hero-text'>
-        <p className='hero-intro'>Home of teeth whitening</p>
+        <h3 className='hero-intro'>Home of teeth whitening</h3>
         <h1 className='hero-title'>Hismile Homepage</h1>
-        <p className='hero-tagline'>We care about smile care</p>
+        <h3 className='hero-tagline'>We care about smile care</h3>
         <br></br>
 
         <div className='hero-buttons'>
           <button className='hero-shop-button'>
-            <p>Shop the teeth whitening kit</p>
+            <h3>Shop the teeth whitening kit</h3>
           </button>
+          <br></br>
           <button className='hero-video-button'>
-            <p>Watch the video</p>
+            <h3>Watch the video</h3>
           </button>
         </div>
+
       </div>
     </div>
   );
