@@ -101,9 +101,25 @@
     border: 5px solid purple;
   }
 
-  .Navbar .leftSide .links .home-link {
-    display: none;
+    .Navbar .leftSide button {
+    display: flex;
+    margin-right: 80%;
+    border-color: transparent;
+    background-color: transparent;
   }
+
+  /* .Navbar .leftSide .links .home-link {
+    display: none;
+  } */
+
+  /* make home link hismile text */
+
+  /* .Navbar .nav-title-desktop {
+  border: 3px solid brown;
+  display: flex;
+  align-self: flex-start;
+  position: absolute;
+} */
 }
 
 @media only screen and (max-width: 750px) {
@@ -122,12 +138,21 @@
     border: 5px solid green;
   }
 
+    .Navbar .leftSide button {
+    display: flex;
+    margin-right: 80%;
+    border-color: transparent;
+    background-color: transparent;
+  }
+/* 
   .Navbar .leftSide .links .home-link {
     display: none;
-  }
+  } */
+
+  
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 880px) {
   .Navbar .leftSide button {
     display: flex;
     margin-right: 80%;
@@ -135,17 +160,15 @@
     background-color: transparent;
   }
 
-  .Navbar .leftSide .links .explore-range-link {
-    border: 5px solid pink;
+  /* .Navbar .leftSide .links .explore-range-link {
+    display: none;
   }
 
   .Navbar .leftSide .links .shop-kit-link {
-    border: 5px solid pink;
-  }
-
-  /* .Navbar .leftSide .links {
     display: none;
   } */
+
+
 
   .Navbar .leftSide #hidden {
     position: absolute;
@@ -216,8 +239,7 @@
   } */
 }
 
-.Navbar .leftside .links .home-link {
-}
+
 
 /* burgerbutton styling */
 
