@@ -7,43 +7,40 @@
   padding: 0;
   justify-content: center;
   align-items: center;
-
 }
-
-/* .Navbar .nav-title {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
-
-.Navbar .nav-title #hidden {
-  display: flex;
-  justify-content: left;
-} */
 
 .Navbar .nav-title-desktop {
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
   display: flex;
   align-self: flex-start;
 
   max-height: 80px;
-  /* position: absolute; */
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin-right: 20px;
 }
 
 .Navbar .nav-title-mobile {
-  border: 3px solid red;
+  /* border: 3px solid red; */
   display: flex;
-  /* flex: 50%; */
-  /* justify-self: center; */
-  /* justify-content: center; */
-  /* justify-items: center; */
-  /* align-self: center; */
-  /* align-items: center; */
-  /* align-content: center; */
   position: absolute;
-  /* align-content: center; */
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin-right: 20px;
+  max-height: 80px;
 }
 
+.Navbar .links:hover {
+  border-bottom: 5px solid rgb(94, 92, 92);
+}
+
+/* .Navbar .links .a .links:hover {
+  border-bottom: 5px solid rgb(94, 92, 92);
+} */
+
+/* sort out remaining link hovers - some are doubled*/
 .Navbar .leftSide {
   flex: 50%;
   display: flex;
@@ -56,7 +53,6 @@
 }
 
 .Navbar .leftSide .links a:hover {
-  /* background-color:rgb(146, 146, 146); */
   border-bottom: 5px solid rgb(94, 92, 92);
 }
 
@@ -64,41 +60,15 @@
   text-decoration: none;
   color: white;
   font-size: 25px;
-  margin-left: 15px;
-}
-
-.Navbar .leftSide button {
-  /* display: none; */
-  /* margin-left: 20px; */
-  /* border: transparent; */
-  /* background-color: transparent; */
 }
 
 .Navbar button {
-  /* display: flex; */
-  /* margin-right: 80%; */
-  /* border-color: transparent; */
   background-color: transparent;
-
   display: flex;
   align-self: center;
-  /* position: absolute; */
-  /* justify-self: center; */
-  /* align-content: center; */
-  /* justify-content: center; */
-  /* background-color: transparent; */
-  border: 5px solid yellow;
   padding: 0;
   margin: 0;
-}
-
-.burger-button-container {
-  /* display: inline-block; */
-  /* display: flex;
-  cursor: pointer;
-  border-color: green;
-  background-color: transparent; */
-  /* margin-left: 5%; */
+  border-color: transparent;
 }
 
 .Navbar .leftSide #buttonlinks {
@@ -144,145 +114,77 @@
   padding: 0;
 }
 
-@media only screen and (max-width: 880px) {
-  .Navbar .leftSide .links a {
-    font-size: 20px;
-  }
-  /* .Navbar .leftSide .links .explore-range-link {
-    border: 5px solid purple;
-  }
-
-  .Navbar .leftSide .links .shop-kit-link {
-    border: 5px solid purple;
-  } */
-
-  /* .Navbar .leftSide .links .home-link {
-    display: none;
-  } */
-
-  /* make home link hismile text */
-
-  /* .Navbar .nav-title-desktop {
-  border: 3px solid brown;
-  display: flex;
-  align-self: flex-start;
-  position: absolute;
-} */
+/* @media only screen and (max-width: 880px) { */
+.Navbar .leftSide .links a {
+  font-size: 20px;
 }
+/* } */
 
 @media only screen and (max-width: 750px) {
   .Navbar .leftSide .links a {
     font-size: 15px;
-    /* border: 5px solid red;
-    color: red;
-    background-color: blue; */
-  }
-
-  /* .Navbar .leftSide .links .explore-range-link {
-    border: 5px solid green;
-  }
-
-  .Navbar .leftSide .links .shop-kit-link {
-    border: 5px solid green;
-  } */
-
-  /* .Navbar .leftSide button {
-    display: flex;
-    margin-right: 80%;
-    border-color: transparent;
-    background-color: transparent;
-  } */
-
-  /* .Navbar .leftSide button { */
-  /* display: flex; */
-  /* margin-right: 80%; */
-  /* border-color: transparent;
-    background-color: transparent; */
-  /* } */
-  /* 
-  .Navbar .leftSide .links .home-link {
-    display: none;
-  } */
-}
-
-@media only screen and (max-width: 880px) {
-  /* .Navbar .leftSide .links .explore-range-link {
-    display: none;
-  }
-
-  .Navbar .leftSide .links .shop-kit-link {
-    display: none;
-  } */
-
-  .Navbar .leftSide #buttonlinks {
-    position: absolute;
-    left: 0px;
-    top: 80px;
-    height: 130px;
-    max-height: 130px;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .Navbar .leftSide #buttonlinks a {
-    margin: 10px;
-    font-size: 25px;
-  }
-
-  .Navbar .rightSide #buttonlinks {
-    position: absolute;
-    left: 0px;
-    top: 80px;
-    height: 230px;
-    max-height: 230px;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .Navbar .rightSide #buttonlinks a {
-    margin: 10px;
-    font-size: 25px;
   }
 }
 
-@media only screen and (min-width: 880px) {
-  .Navbar .leftSide .links-desktop a {
-    font-size: 20px;
-    /* /* text-decoration: none; */
-    color: white;
-    font-size: 25px;
-    margin-left: 15px;
-    max-height: 80px;
-  }
-
-  .Navbar .leftSide .links-desktop {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-    margin-left: 15px;
-    max-height: 80px;
-    display: flex;
-  }
-
-  .Navbar .leftSide .links .explore-range-link {
-    border: 5px solid yellow;
-  }
-
-  .Navbar .leftSide .links .shop-kit-link {
-    border: 5px solid yellow;
-  }
-
-  /* .Navbar .leftSide .links .home-link {
-    display: none;
-  } */
+/* @media only screen and (max-width: 880px) { */
+.Navbar .leftSide #buttonlinks {
+  position: absolute;
+  left: 0px;
+  top: 80px;
+  height: 130px;
+  max-height: 130px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.Navbar .leftSide #buttonlinks a {
+  margin: 10px;
+  font-size: 25px;
+}
+
+.Navbar .rightSide #buttonlinks {
+  position: absolute;
+  left: 0px;
+  top: 80px;
+  height: 230px;
+  max-height: 230px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Navbar .rightSide #buttonlinks a {
+  margin: 10px;
+  font-size: 25px;
+}
+/* } */
+
+/* @media only screen and (min-width: 880px) { */
+.Navbar .leftSide .links-desktop a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  margin-left: 15px;
+  max-height: 80px;
+}
+
+.Navbar .leftSide .links-desktop {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  margin-left: 15px;
+  max-height: 80px;
+  display: flex;
+}
+
+/* } */
 
 /* burgerbutton styling */
 

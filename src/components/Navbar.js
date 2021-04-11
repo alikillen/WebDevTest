@@ -27,7 +27,6 @@ function Navbar() {
       <Link
         to='/'
         className={isPageDesktop ? "nav-title-desktop" : "nav-title-mobile"}
-        // className="links"
       >
         <h1>Hismile</h1>
       </Link>
@@ -35,14 +34,8 @@ function Navbar() {
       <div className='leftSide'>
         <div
           className={isPageDesktop ? "links-desktop" : "links"}
-          // className='links'
           id={showLinks ? "buttonlinks" : ""}
         >
-          {/* {isPageMobile && (
-            <a className='home-link' href='/'>
-              Home
-            </a>
-          )} */}
           <a
             className={
               isPageMobile && !showLinks ? "hide-shop-kit-link" : "links"
@@ -59,9 +52,6 @@ function Navbar() {
           >
             Explore the Range
           </a>
-          {/* <a className='cart-link' href='https://hismileteeth.com/cart'>
-            My Cart
-          </a> */}
         </div>
       </div>
 
