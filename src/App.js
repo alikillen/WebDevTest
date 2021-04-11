@@ -5,7 +5,7 @@ import Home from "./pages/Home.js";
 
 import "./App.css";
 import JSChallenges from "./components/JSChallenges";
-import Questions from "./components/Questions"
+import Questions from "./components/Questions";
 
 function App() {
   return (
@@ -14,9 +14,9 @@ function App() {
         <Navbar />
         <Switch>
           <Route path='/' exact component={Home} />
-          <Route path="/Questions" exact component={Questions} />
-          <Route path="JSChallenges" exact component={JSChallenges} />
         </Switch>
+        <Route path='/Questions' exact component={Questions} />
+        <Route path='/JSChallenges' exact component={JSChallenges} />
       </Router>
     </>
   );
