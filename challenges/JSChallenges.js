@@ -3,7 +3,7 @@
 // 3. JavaScript
 // Download the following JS file and answer the questions within.
 
-// run the solutions here by running "node JSChallenges" while in the challenges folder.
+// run the solutions here by running "node JSChallenges" while in the challenges folder of my react app repo.
 
 /*
     Q. 1

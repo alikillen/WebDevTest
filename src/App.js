@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home.js";
 
 import "./App.css";
-import JSChallenges from "./components/JSChallenges";
+import DadJokeGen from "./components/DadJokeGen";
 import Questions from "./components/Questions";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
           <Route path='/' exact component={Home} />
         </Switch>
         <Route path='/Questions' exact component={Questions} />
-        <Route path='/JSChallenges' exact component={JSChallenges} />
+        <Route path='/DadJokeGen' exact component={DadJokeGen} />
       </Router>
     </>
   );

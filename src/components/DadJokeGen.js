@@ -9,7 +9,7 @@ import "../App.css";
     API endpoint: https://icanhazdadjoke.com/
 */
 
-function JSChallenges() {
+function DadJokeGen() {
   function fetchDadJoke() {
     const joke = document.getElementById("dad-joke");
 
@@ -27,20 +27,27 @@ function JSChallenges() {
 
   return (
     <>
-      <h1>Random Dad Joke Generator</h1>
-      <p>
-        Jokes from the
-        <a href='https://icanhazdadjoke.com/api'>icanhazdadjoke</a> API
-      </p>
+      <div className='DadJokeGen'>
+        <h1>JS Challenge Q2 - Random Dad Joke Generator</h1>
+        <p>
+          My solutions to the other JS challenges are within the /challenges folder of this repo - there is
+          a file with the solutions called JSChallenges.js. They can be run in
+          an IDE to test them.
+        </p>
+        <p>
+          Jokes from the
+          <a href='https://icanhazdadjoke.com/api'>icanhazdadjoke</a> API
+        </p>
 
-      <button className='joke-btn' onclick={fetchDadJoke()}>
-        Fetch me a joke
-      </button>
+        <button className='joke-btn' onclick={fetchDadJoke()}>
+          Fetch me a joke
+        </button>
 
-      <h2>Your Dad joke is...</h2>
-      <p className='dad-joke' id='dad-joke'></p>
+        <h2>Your Dad joke is...</h2>
+        <p className='dad-joke' id='dad-joke'></p>
+      </div>
     </>
   );
 }
 
-export default JSChallenges;
+export default DadJokeGen;
